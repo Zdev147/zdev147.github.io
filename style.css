@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 /* Reset & base styles */
 * {
     margin: 0;
@@ -26,6 +28,29 @@
     --text: #f1f1f1;
     --card-bg: #242424;
     --input-bg: #2c2c2c;
+  }
+
+  /* MeTube Logo */
+  .metube-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: -0.5px;
+  }
+  .me {
+    color: #ff0000; /* YouTube red color */
+  }
+  
+  .tube {
+    color: var(--text); /* Adapts to light/dark mode */
+  }
+  
+  /* Adjust logo positioning */
+  .sidebar .logo {
+    margin-bottom: 2rem;
+    padding: 0.5rem 0;
   }
   
   /* Sidebar */
@@ -306,3 +331,57 @@
   .skills-grid span:nth-child(9)::before { background-image: url('https://cdn.worldvectorlogo.com/logos/javascript-1.svg'); }
   .skills-grid span:nth-child(10)::before { background-image: url('https://cdn.worldvectorlogo.com/logos/mysql-logo-pure.svg'); }
   .skills-grid span:nth-child(11)::before { background-image: url('https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg'); }
+
+
+  /* Updated Card Styles */
+.card {
+    background: var(--card-bg);
+    padding: 1.5rem; /* Increased padding */
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border */
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Dark mode border adjustment */
+  body.dark .card {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Card content spacing */
+  .card h3 {
+    margin: 1rem 0 0.75rem 0;
+  }
+  
+  .card p {
+    margin-bottom: 1.25rem;
+    line-height: 1.5;
+  }
+  
+  /* Tags container */
+  .tags {
+    margin: 1rem 0;
+    padding: 0.25rem 0;
+  }
+  
+  /* Button container */
+  .card-actions {
+    margin-top: 1.5rem;
+    padding-top: 0.5rem;
+  }
+  
+  /* Enhanced hover effect */
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-color: var(--accent);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .card {
+      padding: 1.25rem;
+    }
+  }
