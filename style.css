@@ -1,0 +1,308 @@
+/* Reset & base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  :root {
+    --accent: #cc0000;
+    --bg: #f9f9f9;
+    --text: #1c1c1c;
+    --card-bg: #ffffff;
+    --input-bg: #ffffff;
+  }
+  
+  body.dark {
+    --bg: #181818;
+    --text: #f1f1f1;
+    --card-bg: #242424;
+    --input-bg: #2c2c2c;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 220px;
+    background: var(--card-bg);
+    padding: 2rem 1rem;
+    height: 100vh;
+    position: fixed;
+    border-right: 1px solid #ddd;
+  }
+  
+  .sidebar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar ul li {
+    margin: 1rem 0;
+  }
+  
+  .sidebar ul li a {
+    color: var(--text);
+    text-decoration: none;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+  
+  .sidebar ul li a:hover {
+    background: var(--accent);
+    color: #fff;
+  }
+  
+  /* Header */
+  header {
+    position: fixed;
+    left: 220px;
+    right: 0;
+    top: 0;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background: var(--card-bg);
+    border-bottom: 1px solid #ddd;
+    z-index: 10;
+  }
+  
+  .search-bar {
+    width: 300px;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: var(--input-bg);
+    color: var(--text);
+  }
+  
+  .header-icons button,
+  .header-icons a {
+    margin-left: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--text);
+  }
+  
+  /* Main Content */
+  main {
+    margin-left: 220px;
+    margin-top: 60px;
+    padding: 2rem;
+    flex: 1;
+  }
+  
+  .section {
+    margin-bottom: 3rem;
+  }
+  
+  .section h2 {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--accent);
+    display: inline-block;
+    padding-bottom: 0.25rem;
+  }
+  
+  /* Cards */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  
+  
+  .card-img {
+    height: 120px;
+    background: #ddd;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .tags span {
+    display: inline-block;
+    background: #eee;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    margin: 0.25rem;
+    font-size: 0.8rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    background: var(--accent);
+    color: #fff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  /* Contact */
+  form {
+    display: grid;
+    gap: 1rem;
+    max-width: 500px;
+  }
+  
+  input,
+  textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: var(--input-bg);
+    color: var(--text);
+  }
+  
+  button[type='submit'] {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: var(--text);
+    margin-top: 3rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .sidebar {
+      display: none;
+    }
+  
+    header {
+      left: 0;
+    }
+  
+    main {
+      margin-left: 0;
+    }
+  }
+
+  /* About Me Section */
+.about-content {
+    max-width: 800px;
+    line-height: 1.6;
+  }
+  
+  .expertise-list {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+    list-style-type: none; 
+  }
+  
+  .expertise-list li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  
+  
+  .timeline {
+    margin: 2rem 0;
+    padding-left: 1.5rem;
+    list-style-type: none; 
+  }
+  
+  .timeline li {
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .timeline li:before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+  }
+  
+  .timeline strong {
+    color: var(--accent);
+  }
+  
+  .closing {
+    margin-top: 1.5rem;
+    font-style: italic;
+  }
+
+  /* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 0.8rem;
+    max-width: 800px;
+  }
+  
+  .skills-grid span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 0.5rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    background: var(--card-bg);
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+  
+  .skills-grid span:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: var(--accent);
+  }
+  
+  /* Add skill icons using pseudo-elements */
+  .skills-grid span::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  /* Individual skill icons */
+  .skills-grid span:nth-child(1)::before { background-image: url('https://cdn.worldvectorlogo.com/logos/flutter-logo.svg'); }
+  .skills-grid span:nth-child(2)::before { background-image: url('https://cdn.worldvectorlogo.com/logos/dart.svg'); }
+  .skills-grid span:nth-child(3)::before { background-image: url('https://cdn.worldvectorlogo.com/logos/android.svg'); }
+  .skills-grid span:nth-child(4)::before { background-image: url('https://cdn.worldvectorlogo.com/logos/ios.svg'); }
+  .skills-grid span:nth-child(5)::before { background-image: url('https://cdn.worldvectorlogo.com/logos/firebase-1.svg'); }
+  .skills-grid span:nth-child(6)::before { background-image: url('https://cdn.worldvectorlogo.com/logos/supabase.svg'); }
+  .skills-grid span:nth-child(7)::before { background-image: url('https://cdn.worldvectorlogo.com/logos/dot-net-core-7.svg'); }
+  .skills-grid span:nth-child(8)::before { background-image: url('https://cdn.worldvectorlogo.com/logos/python-5.svg'); }
+  .skills-grid span:nth-child(9)::before { background-image: url('https://cdn.worldvectorlogo.com/logos/javascript-1.svg'); }
+  .skills-grid span:nth-child(10)::before { background-image: url('https://cdn.worldvectorlogo.com/logos/mysql-logo-pure.svg'); }
+  .skills-grid span:nth-child(11)::before { background-image: url('https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg'); }

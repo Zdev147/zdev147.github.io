@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmed Imran Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo">Portfolio</div>
+    <ul>
+      <li><a href="#home">🏠 Home</a></li>
+      <li><a href="#projects">📁 Projects</a></li>
+      <li><a href="#skills">🛠️ Skills</a></li>
+      <li><a href="#about">👤 About Me</a></li>
+      <li><a href="#contact">📞 Contact</a></li>
+    </ul>
+  </div>
+
+  <header>
+    <input type="text" placeholder="Search" class="search-bar" />
+    <div class="header-icons">
+      <button id="darkToggle" aria-label="Toggle Dark Mode">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun" style="display:none;"></i>
+      </button>
+      <button>🔊</button>
+      <a href="https://github.com/yourusername" target="_blank">🐙</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="card-grid">
+        <!-- Arab Sea - ThreeSCart -->
+        <div class="card" onclick="location.href='#'" style="cursor: pointer;">
+          <div class="card-img" style="background-color: #2E86C1;"></div>
+          <h3>Arab Sea - ThreeSCart</h3>
+          <p>E-commerce platform for Arab Sea fishing equipment with multi-vendor support, real-time inventory, and secure payments.</p>
+          <div class="tags">
+            <span>Flutter</span>
+            <span>Firebase</span>
+            <span>Node.js</span>
+          </div>
+          <button class="btn visit-btn">Visit Project</button>
+        </div>
+    
+        <!-- Testing Daily -->
+        <div class="card" onclick="location.href='#'" style="cursor: pointer;">
+          <div class="card-img" style="background-color: #3498DB;"></div>
+          <h3>Testing Daily</h3>
+          <p>Educational app providing daily test preparation materials with progress tracking and personalized quizzes.</p>
+          <div class="tags">
+            <span>Flutter</span>
+            <span>Firebase</span>
+            <span>Dart</span>
+          </div>
+          <button class="btn visit-btn">Visit Project</button>
+        </div>
+    
+        <!-- Capture Adventure -->
+        <div class="card" onclick="location.href='#'" style="cursor: pointer;">
+          <div class="card-img" style="background-color: #27AE60;"></div>
+          <h3>Capture Adventure</h3>
+          <p>Travel companion app for adventure seekers with location-based challenges and social sharing features.</p>
+          <div class="tags">
+            <span>Flutter</span>
+            <span>Google Maps API</span>
+            <span>Firestore</span>
+          </div>
+          <button class="btn visit-btn">Visit Project</button>
+        </div>
+    
+        <!-- Cashless 24/7 -->
+        <div class="card" onclick="location.href='#'" style="cursor: pointer;">
+          <div class="card-img" style="background-color: #9B59B6;"></div>
+          <h3>Cashless 24/7</h3>
+          <p>Digital payment solution offering seamless transactions, bill splitting, and merchant services.</p>
+          <div class="tags">
+            <span>Flutter</span>
+            <span>Payment Gateway</span>
+            <span>.NET API</span>
+          </div>
+          <button class="btn visit-btn">Visit Project</button>
+        </div>
+    
+        <!-- BAT Goro -->
+        <div class="card" onclick="location.href='#'" style="cursor: pointer;">
+          <div class="card-img" style="background-color: #E74C3C;"></div>
+          <h3>BAT Goro</h3>
+          <p>Sports betting platform with live odds, secure transactions, and real-time match updates.</p>
+          <div class="tags">
+            <span>Flutter</span>
+            <span>WebSockets</span>
+            <span>Firebase</span>
+          </div>
+          <button class="btn visit-btn">Visit Project</button>
+        </div>
+    
+        <!-- Ultimate Invoicer -->
+        <div class="card" onclick="location.href='#'" style="cursor: pointer;">
+          <div class="card-img" style="background-color: #F39C12;"></div>
+          <h3>Ultimate Invoicer</h3>
+          <p>Business invoicing solution with PDF generation, client management, and expense tracking.</p>
+          <div class="tags">
+            <span>Flutter</span>
+            <span>PDF Generation</span>
+            <span>SQLite</span>
+          </div>
+          <button class="btn visit-btn">Visit Project</button>
+        </div>
+    
+        <!-- Shipping Company -->
+        <div class="card" onclick="location.href='#'" style="cursor: pointer;">
+          <div class="card-img" style="background-color: #16A085;"></div>
+          <h3>Shipping Company</h3>
+          <p>Logistics management system for shipping companies with package tracking and driver dispatch.</p>
+          <div class="tags">
+            <span>Flutter</span>
+            <span>Google Maps</span>
+            <span>REST API</span>
+          </div>
+          <button class="btn visit-btn">Visit Project</button>
+        </div>
+    
+        <!-- Scribes POS -->
+        <div class="card" onclick="location.href='#'" style="cursor: pointer;">
+          <div class="card-img" style="background-color: #2980B9;"></div>
+          <h3>Scribes POS</h3>
+          <p>Point of Sale system for retail businesses with inventory management and sales analytics.</p>
+          <div class="tags">
+            <span>Flutter</span>
+            <span>Bluetooth Printing</span>
+            <span>Local Database</span>
+          </div>
+          <button class="btn visit-btn">Visit Project</button>
+        </div>
+    
+        <!-- ThingTrax Manage -->
+        <div class="card" onclick="location.href='#'" style="cursor: pointer;">
+          <div class="card-img" style="background-color: #2C3E50;"></div>
+          <h3>ThingTrax Manage</h3>
+          <p>Industrial IoT management platform for monitoring manufacturing equipment and production lines.</p>
+          <div class="tags">
+            <span>Flutter</span>
+            <span>IoT</span>
+            <span>WebSockets</span>
+          </div>
+          <button class="btn visit-btn">Visit Project</button>
+        </div>
+    
+        <!-- ThingTrax AppOne -->
+        <div class="card" onclick="location.href='#'" style="cursor: pointer;">
+          <div class="card-img" style="background-color: #8E44AD;"></div>
+          <h3>ThingTrax AppOne</h3>
+          <p>Companion app for ThingTrax ecosystem with real-time machine data visualization and alerts.</p>
+          <div class="tags">
+            <span>Flutter</span>
+            <span>Data Visualization</span>
+            <span>Push Notifications</span>
+          </div>
+          <button class="btn visit-btn">Visit Project</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <span>Flutter</span>
+        <span>Dart</span>
+        <span>Android</span>
+        <span>iOS</span>
+        <span>Firebase</span>
+        <span>Supabase</span>
+        <span>.NET</span>
+        <span>Python</span>
+        <span>JavaScript</span>
+        <span>SQL</span>
+        <span>MongoDB</span>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <p>I am a Senior Flutter Developer with a strong background in building scalable, high-performance mobile applications. With 5+ years of experience in mobile development, I have worked across various industries, creating e-commerce platforms, ERP systems, and client-admin applications. In addition to Flutter, I have hands-on experience in .NET backend development, allowing me to design and integrate APIs for seamless mobile experiences.</p>
+        
+        <p>Throughout my career, I have contributed to multiple live applications on the Google Play Store, led Flutter training programs, and mentored developers to become industry-ready. My expertise lies in:</p>
+        
+        <ul class="expertise-list">
+          <li>✅ Flutter & Dart Development – Building cross-platform mobile apps with clean architecture</li>
+          <li>✅ .NET API Development – Designing and integrating scalable backend services</li>
+          <li>✅ E-commerce & ERP Solutions – Developing and optimizing mobile platforms for businesses</li>
+          <li>✅ State Management – Expertise in Provider, Getx, and Bloc</li>
+          <li>✅ Performance Optimization – Ensuring smooth, high-performance apps across devices</li>
+          <li>✅ Mentorship & Training – Conducting professional Flutter training programs</li>
+        </ul>
+        
+        <h3>💡 My Journey So Far:</h3>
+        <ul class="timeline">
+          <li><strong>Thingtrax (Present)</strong> – Developing cutting-edge mobile products and APIs</li>
+          <li><strong>Magnatec Systems (4 years)</strong> – Built and maintained an e-commerce platform and enhanced POS solutions</li>
+          <li><strong>NeXskill (Instructor)</strong> – Trained 3+ batches of students, helping them transition into professional Flutter development</li>
+          <li><strong>Beaconhouse National University (Trainer)</strong> – Trained software engineers in Flutter from scratch</li>
+          <li><strong>Bad Puppets Studio (Developer)</strong> – Developed client-admin applications, some of which are live on the Play Store</li>
+        </ul>
+        
+        <p class="closing">I am passionate about solving complex problems with elegant mobile solutions and am always eager to learn, innovate, and mentor. Let's connect and collaborate on exciting opportunities!</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <form>
+        <label>Name</label>
+        <input type="text" name="name" />
+        <label>Email</label>
+        <input type="email" name="email" />
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ahmed Imran. All rights reserved.</p>
+  </footer>
+</body>
+</html>
